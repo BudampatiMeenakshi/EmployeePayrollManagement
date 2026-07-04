@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Employee Payroll Management</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header>
+
+    <div class="logo">
+        👑 RoyalTech
+    </div>
+
+    <h1>Employee Payroll Management System</h1>
+
+</header>
+
+<section class="dashboard">
+
+    <div class="card">
+        <h3>Total Employees</h3>
+        <h2 id="totalEmployees">0</h2>
+    </div>
+
+    <div class="card">
+        <h3>Total Payroll</h3>
+        <h2 id="totalPayroll">₹0</h2>
+    </div>
+
+    <div class="card">
+        <h3>Average Salary</h3>
+        <h2 id="avgSalary">₹0</h2>
+    </div>
+
+</section>
+
+<div class="container">
+
+<h2>Add / Update Employee</h2>
+
+<div class="form-grid">
+
+<input id="empId" placeholder="Employee ID">
+
+<input id="name" placeholder="Employee Name">
+
+<input id="basicSalary" placeholder="Basic Salary">
+
+<input id="hra" placeholder="HRA">
+
+<input id="allowance" placeholder="Allowance">
+
+<input id="deduction" placeholder="Deduction">
+
+</div>
+
+<div class="buttons">
+
+<button onclick="addEmployee()">
+Add Employee
+</button>
+
+<button onclick="updateEmployee()">
+Update Employee
+</button>
+
+</div>
+
+</div>
+
+<div class="container">
+
+<h2>Search Employee</h2>
+
+<input id="searchId" placeholder="Enter Employee ID">
+
+<button onclick="searchEmployee()">
+Search
+</button>
+
+</div>
+
+<div class="container">
+
+<h2>Employee Records</h2>
+
+<table>
+
+<thead>
+
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Basic Salary</th>
+<th>Net Salary</th>
+<th>Payslip</th>
+<th>Actions</th>
+</tr>
+
+</thead>
+
+<tbody id="employeeTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+<footer>
+
+Payroll Management System © 2026
+
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>
